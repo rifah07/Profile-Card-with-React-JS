@@ -1,3 +1,4 @@
+import PropTypes, { string } from 'prop-types';
 import "./ProfileCard.css";
 
 function ProfileCard(props){
@@ -12,4 +13,10 @@ function ProfileCard(props){
 
 }
 
+ProfileCard.propTypes={
+ imageUrl:PropTypes.string.isRequired,
+ name:PropTypes.string.isRequired,
+ bio:PropTypes.string.isRequired
+
+}
 export default ProfileCard;
